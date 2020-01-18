@@ -1,6 +1,6 @@
 let expect = require('chai').expect;
 
-const TimeHandler = require('./timeHandling.js');
+const TimeHandler = require('../src/timeHandling.js');
 const time = new TimeHandler()
 
 describe('time object', function() {

@@ -7,7 +7,7 @@
 
 const expect = require('chai').expect;
 
-const IntervalHandler = require('./intervals.js');
+const IntervalHandler = require('../src/intervals.js');
 const IH = new IntervalHandler()
 
 describe('interval handler object', function() {

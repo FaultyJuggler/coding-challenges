@@ -2,15 +2,15 @@ const assert = require('assert');
 const input = "  hello   world "
 const out = "  olleh   dlrow "
 
-//const result = reverseWithSameSpaces(input)
-//console.log( result )
-//assert( result === out )
+// const result = reverseWithSameSpaces(input)
+// console.log( result )
+// assert( result === out )
 
 function reverseWithSameSpaces( phrase )
 {
     var result = ""
 
-    for( var i = 0; i < test.length; i++)
+    for( var i = 0; i < phrase.length; i++)
     {
         // if characters for leaving in place
         if( phrase[i] === ' ' )
@@ -21,7 +21,7 @@ function reverseWithSameSpaces( phrase )
         {
             var j = i
 
-            while( j< test.length && phrase[j] !== ' ')
+            while( j< phrase.length && phrase[j] !== ' ')
             {
                 j++
             }
@@ -37,6 +37,8 @@ function reverseWithSameSpaces( phrase )
     }
     return result
 }
+
+
 
 // given an array representing a tree where -1 is an empty node, return whether
 // left or right side is larger as a sum

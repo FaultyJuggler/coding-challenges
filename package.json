@@ -12,5 +12,9 @@
   "dependencies": {
     "chai": "^4.2.0",
     "collections": "^5.1.9"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.13.0"
   }
 }
