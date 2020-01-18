@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TOMzxRmLnmqGzHMDd8CUB8OwHG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.1.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="" />
+      <created>1573326954304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573326954304</updated>
+      <workItem from="1573326956244" duration="9010000" />
+      <workItem from="1573424420688" duration="2544000" />
+      <workItem from="1573480361592" duration="235000" />
+      <workItem from="1573506984231" duration="4937000" />
+      <workItem from="1573520626491" duration="2027000" />
+      <workItem from="1573568534125" duration="4601000" />
+      <workItem from="1573787177296" duration="1637000" />
+      <workItem from="1573841429902" duration="520000" />
+      <workItem from="1573854075048" duration="1687000" />
+      <workItem from="1574185036767" duration="20000" />
+      <workItem from="1574205049709" duration="2672000" />
+      <workItem from="1574273060277" duration="362000" />
+      <workItem from="1574275583754" duration="1427000" />
+      <workItem from="1574287392848" duration="663000" />
+      <workItem from="1574385591311" duration="968000" />
+      <workItem from="1574459108631" duration="797000" />
+      <workItem from="1574727008830" duration="1862000" />
+      <workItem from="1574730623738" duration="15000" />
+      <workItem from="1574730661201" duration="4613000" />
+      <workItem from="1574808341225" duration="2214000" />
+      <workItem from="1574886015529" duration="2406000" />
+      <workItem from="1574900815874" duration="3000" />
+      <workItem from="1574901133477" duration="3509000" />
+      <workItem from="1574959517728" duration="250000" />
+      <workItem from="1575051276417" duration="6460000" />
+      <workItem from="1575080936159" duration="260000" />
+      <workItem from="1575132198390" duration="1443000" />
+      <workItem from="1575137363112" duration="9496000" />
+      <workItem from="1575217010877" duration="576000" />
+      <workItem from="1575241029273" duration="311000" />
+      <workItem from="1578253528244" duration="7000" />
+      <workItem from="1578515551709" duration="2009000" />
+      <workItem from="1578531942064" duration="5000" />
+      <workItem from="1578583095144" duration="599000" />
+      <workItem from="1578598612095" duration="5000" />
+      <workItem from="1578966203300" duration="205000" />
+      <workItem from="1579303304876" duration="1108000" />
+      <workItem from="1579305573871" duration="119000" />
+      <workItem from="1579305772781" duration="319000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="726" y="353" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579305501859">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="726" y="353" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579305501859" />
+    <state x="968" y="466" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2560.563.1440.877/0.23.2560.1417@0.23.2560.1417" timestamp="1574730631214" />
+    <state x="713" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1575052110804">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="713" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575052110804" />
+    <state x="461" y="200" key="SettingsEditor" timestamp="1575145926685">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575145926685" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579363368176">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579363368176" />
+    <state x="625" y="261" key="run.anything.popup" timestamp="1575143431869">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="625" y="261" key="run.anything.popup/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575143431869" />
+  </component>
+</project>
