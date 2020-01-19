@@ -120,6 +120,8 @@ export const non_repeat_substring = function(str) {
       substr.shift()
     }
     substr.push(nextChar)
+
+    max = Math.max( substr.length, max )
   }
 
   return max

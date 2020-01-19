@@ -28,3 +28,22 @@ test("Each character represents a fruit tree put maximum number of fruits in 2 b
 
   assert.end();
 });
+
+test("find the length of the longest substring which has no repeating characters", (assert) => {
+  let expected = 3
+  let actual = window.non_repeat_substring("aabccbb" )
+  assert.equal(actual, expected,
+      'aabccbb => 3');
+
+  expected = 2
+  actual = window.non_repeat_substring("abbbb" )
+  assert.equal(actual, expected,
+      'abbbb => 2');
+
+  expected = 3
+  actual = window.non_repeat_substring("abccde" )
+  assert.equal(actual, expected,
+      'abccde => 3');
+
+  assert.end();
+});

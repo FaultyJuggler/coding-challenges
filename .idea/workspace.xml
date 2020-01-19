@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sliding-window.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/sliding-window-spec.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intervals-spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/intervals-spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intervals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/intervals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/timeHandling-spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/timeHandling-spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timeHandling.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/timeHandling.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sliding-window.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sliding-window.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/sliding-window-spec.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/test/sliding-window-spec.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +116,8 @@
       <workItem from="1579303304876" duration="1108000" />
       <workItem from="1579305573871" duration="119000" />
       <workItem from="1579305772781" duration="319000" />
-      <workItem from="1579363289640" duration="7131000" />
+      <workItem from="1579363289640" duration="7487000" />
+      <workItem from="1579458068903" duration="841000" />
     </task>
     <task id="LOCAL-00001" summary="first init and push">
       <created>1579363396136</created>
@@ -135,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579363396136</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="working on sliding window problems">
+      <created>1579373703816</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579373703817</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first init and push" />
-    <option name="LAST_COMMIT_MESSAGE" value="first init and push" />
+    <MESSAGE value="working on sliding window problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on sliding window problems" />
   </component>
   <component name="WindowStateProjectService">
     <state x="726" y="353" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579305501859">
@@ -155,21 +154,26 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="713" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575052110804" />
-    <state x="536" y="66" key="CommitChangelistDialog2" timestamp="1579363395616">
+    <state x="536" y="66" key="CommitChangelistDialog2" timestamp="1579373703368">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579363395616" />
-    <state x="461" y="200" key="SettingsEditor" timestamp="1579365432045">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579373703368" />
+    <state x="346" y="170" key="SettingsEditor" timestamp="1579458498725">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state x="346" y="170" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1579458498725" />
     <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579365432045" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579373670787">
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579373706320">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579373670787" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579373706320" />
     <state x="625" y="261" key="run.anything.popup" timestamp="1575143431869">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="625" y="261" key="run.anything.popup/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575143431869" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1579458573806">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1579458573806" />
   </component>
 </project>
