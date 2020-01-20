@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/strings-hackerrank.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/strings-hackerrank-spec.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sliding-window.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sliding-window.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/sliding-window-spec.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/test/sliding-window-spec.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,8 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.splitter.proportion" value="0.26405624" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -117,7 +118,9 @@
       <workItem from="1579305573871" duration="119000" />
       <workItem from="1579305772781" duration="319000" />
       <workItem from="1579363289640" duration="7487000" />
-      <workItem from="1579458068903" duration="841000" />
+      <workItem from="1579458068903" duration="9394000" />
+      <workItem from="1579536092915" duration="1247000" />
+      <workItem from="1579538685274" duration="1126000" />
     </task>
     <task id="LOCAL-00001" summary="first init and push">
       <created>1579363396136</created>
@@ -133,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579373703817</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="working on sliding window problems">
+      <created>1579459244598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579459244598</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,26 +164,28 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="713" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575052110804" />
-    <state x="536" y="66" key="CommitChangelistDialog2" timestamp="1579373703368">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579373703368" />
-    <state x="346" y="170" key="SettingsEditor" timestamp="1579458498725">
+    <state x="402" y="23" key="CommitChangelistDialog2" timestamp="1579459244321">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="346" y="170" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1579458498725" />
-    <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579365432045" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579373706320">
+    <state x="402" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1579459244321" />
+    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579373703368" />
+    <state x="461" y="200" key="SettingsEditor" timestamp="1579538880813">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
+    <state x="346" y="170" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1579459745056" />
+    <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579538880813" />
+    <state x="420" y="242" key="Vcs.Push.Dialog.v2" timestamp="1579459247618">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="420" y="242" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1579459247618" />
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579373706320" />
     <state x="625" y="261" key="run.anything.popup" timestamp="1575143431869">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="625" y="261" key="run.anything.popup/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575143431869" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1579458573806">
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1579476084381">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1579458573806" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1579476084381" />
   </component>
 </project>
