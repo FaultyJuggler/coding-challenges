@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dynamic-programming.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/dynamic-programming-spec.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strings-hackerrank.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/strings-hackerrank.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/strings-hackerrank-spec.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/test/strings-hackerrank-spec.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamic-programming.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamic-programming.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/dynamic-programming-spec.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/test/dynamic-programming-spec.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +123,7 @@
       <workItem from="1579538685274" duration="1126000" />
       <workItem from="1579540118365" duration="106000" />
       <workItem from="1579551710845" duration="1212000" />
-      <workItem from="1579628223123" duration="804000" />
+      <workItem from="1579628223123" duration="4611000" />
     </task>
     <task id="LOCAL-00001" summary="first init and push">
       <created>1579363396136</created>
@@ -148,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579459244598</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="starting on dynamic programming">
+      <created>1579629250842</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579629250842</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +162,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first init and push" />
     <MESSAGE value="working on sliding window problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on sliding window problems" />
+    <MESSAGE value="starting on dynamic programming" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting on dynamic programming" />
   </component>
   <component name="WindowStateProjectService">
     <state x="726" y="353" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579305501859">
@@ -169,21 +175,21 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="713" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575052110804" />
-    <state x="402" y="23" key="CommitChangelistDialog2" timestamp="1579459244321">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="536" y="66" key="CommitChangelistDialog2" timestamp="1579633270525">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="402" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1579459244321" />
-    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579373703368" />
+    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579633270525" />
     <state x="461" y="200" key="SettingsEditor" timestamp="1579538880813">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="346" y="170" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1579459745056" />
     <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579538880813" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579540207113">
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579629255619">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="420" y="242" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1579459247618" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579540207113" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579629255619" />
     <state x="625" y="261" key="run.anything.popup" timestamp="1575143431869">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
