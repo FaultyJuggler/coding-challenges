@@ -1,15 +1,15 @@
 /*
 Given a set of positive numbers, find if we can partition it into two subsets such that the sum of elements in both the subsets is equal.
  */
-export function equalSubsetSum(arr)
+export function equalSubsetSumMemo( arr )
 {
   let sum = 0;
-  arr.forEach(function(num)
+  arr.forEach( function( num )
   {
     sum += num;
-  });
+  } );
 
-  if (sum % 2 !== 0)
+  if( sum % 2 !== 0 )
   {
     return false;
   }
@@ -40,25 +40,71 @@ export function equalSubsetSum(arr)
         }
       }
       // check without current value
-      memo[currentIndex][sum] = subsetRecursive(sum, arr, currentIndex + 1);
+      memo[currentIndex][sum] = subsetRecursive( sum, arr, currentIndex + 1 );
     }
 
     return memo[currentIndex][sum];
   }
 
   // because each partition must equal half the total sum, we only need to find possibility of half the sum
-  return subsetRecursive(sum / 2, arr, 0);
+  return subsetRecursive( sum / 2, arr, 0 );
+}
+
+export function equalSubsetSumBott( arr )
+{
+  let sum = 0;
+  arr.forEach( function( num )
+  {
+    sum += num;
+  } );
+
+  if( sum % 2 !== 0 )
+  {
+    return false;
+  }
+
+  const length = arr.length;
+  sum /= 2; // we only need to find a match for half the total sum
+  const dpMap = new Array( length ).fill( false ).
+      map( () => Array( sum + 1 ).fill( false ) );
+
+  // populate the sum=0 columns, as we can always for '0' sum with an empty set
+  for( let i = 0; i < length; i++ ) dpMap[i][0] = true;
+  // with only one number, we can form a subset only when the required sum is equal to its value
+  for( let s = 1; s <= sum; s++ )
+  {
+    dpMap[0][s] = arr[0] === s;
+  }
+
+  // process all subsets for all sums
+  for( let i = 1; i < length; i++ )
+  {
+    for( let s = 1; s <= sum; s++ )
+    {
+      // if we can get the sum 's' without the number at index 'i'
+      if( dpMap[i - 1][s] )
+      {
+        dpMap[i][s] = dpMap[i - 1][s];
+      } else if( arr[i] <= sum )
+      {
+        // else if we can find a subset to get the remaining sum
+        dpMap[i][s] = dpMap[i - 1][s - arr[i]];
+      }
+    }
+  }
+
+  return dpMap[length - 1][sum];
 }
 
 /*
 0/1knapsack
 Given the weights and profits of ‘N’ items, we are asked to put these items in a knapsack which has a capacity ‘C’. The goal is to get the maximum profit from the items in the knapsack. Each item can only be selected once, as we don’t have multiple quantities of any item.
  */
-export function solveKnapsackMemo(capacity, profits, weights)
+export function solveKnapsackMemo( capacity, profits, weights )
 {
   const memo = [];
 
-  function knapsackRecursive(profits, weights, capacity, currentIndex)
+  function knapsackRecursive( profits, weights, capacity, currentIndex )
   {
     // base checks
     if (capacity <= 0 || currentIndex >= profits.length) return 0;

@@ -54,9 +54,12 @@ test('check if two subsets can be created that have equal sums', (assert) =>
 
   input.forEach(function(item, i)
   {
-    const actual = dp.equalSubsetSum(item);
-    assert.equal(actual, expected[i],
-        item + ' => ' + expected[i]);
+    let actual = dp.equalSubsetSumMemo( item );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
+    actual = dp.equalSubsetSumBott( item );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
   });
 
   assert.end();
