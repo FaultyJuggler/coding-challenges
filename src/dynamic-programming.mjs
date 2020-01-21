@@ -3,25 +3,41 @@ Given a set of positive numbers, find if we can partition it into two subsets su
  */
 export function equalSubsetSum(arr)
 {
-  let sum1 = 0;
-  let sum2 = 0;
-
-  function subsetRecursive(sum1, sum2, arr, currentIndex)
+  let sum = 0;
+  arr.forEach(function(num)
   {
-    if (currentIndex >= arr.length)
-    {
-      return sum1 === sum2;
-    }
+    sum += num;
+  });
 
-    const first = subsetRecursive(sum1 + arr[currentIndex], sum2, arr,
-        currentIndex + 1);
-    const second = subsetRecursive(sum1, sum2 + arr[currentIndex], arr,
-        currentIndex + 1);
-
-    return ( first || second );
+  if (sum % 2 !== 0)
+  {
+    return false;
   }
 
-  return subsetRecursive(sum1, sum2, arr, 0);
+  function subsetRecursive(sum, arr, currentIndex)
+  {
+    if (sum === 0)
+    {
+      return true;
+    } else if (currentIndex >= arr.length)
+    {
+      return false;
+    }
+
+    // check if we can use current value
+    if (arr[currentIndex] <= sum)
+    {
+      if (subsetRecursive(sum - arr[currentIndex], arr, currentIndex + 1))
+      {
+        return true;
+      }
+    }
+    // check without current value
+    return subsetRecursive(sum, arr, currentIndex + 1);
+  }
+
+  // because each partition must equal half the total sum, we only need to find possibility of half the sum
+  return subsetRecursive(sum / 2, arr, 0);
 }
 
 /*
@@ -66,7 +82,7 @@ export function solveKnapsackMemo(capacity, profits, weights)
 export function solveKnapsackBott(capacity, profits, weights)
 {
   const n = profits.length;
-  if (capacity <= 0 || n == 0 || weights.length != n) return 0;
+  if (capacity <= 0 || n === 0 || weights.length !== n) return 0;
 
   const dp = Array(profits.length).
       fill(0).
@@ -102,7 +118,7 @@ export function solveKnapsackBott(capacity, profits, weights)
   let remainingCapacity = capacity;
   for (let i = weights.length - 1; i > 0; i--)
   {
-    if (totalProfit != dp[i - 1][remainingCapacity])
+    if (totalProfit !== dp[i - 1][remainingCapacity])
     {
       selectedWeights = `${ weights[i] } ${ selectedWeights }`;
       remainingCapacity -= weights[i];
@@ -110,7 +126,7 @@ export function solveKnapsackBott(capacity, profits, weights)
     }
   }
 
-  if (totalProfit !=
+  if (totalProfit !==
       0) selectedWeights = `${ weights[0] } ${ selectedWeights }`;
 
   console.log(`Selected weights: ${ selectedWeights }`);
