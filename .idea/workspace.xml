@@ -7,7 +7,6 @@
     <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dynamic-programming.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamic-programming.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/dynamic-programming-spec.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/test/dynamic-programming-spec.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +122,7 @@
       <workItem from="1579538685274" duration="1126000" />
       <workItem from="1579540118365" duration="106000" />
       <workItem from="1579551710845" duration="1212000" />
-      <workItem from="1579628223123" duration="7346000" />
+      <workItem from="1579628223123" duration="9038000" />
     </task>
     <task id="LOCAL-00001" summary="first init and push">
       <created>1579363396136</created>
@@ -181,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579634812709</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="working with bottom up dp">
+      <created>1579636018127</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1579636018127</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +201,8 @@
     <MESSAGE value="brute force working better, using half and even/odd logic" />
     <MESSAGE value="working with memoization" />
     <MESSAGE value="cleaned up memoization" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned up memoization" />
+    <MESSAGE value="working with bottom up dp" />
+    <option name="LAST_COMMIT_MESSAGE" value="working with bottom up dp" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -208,21 +215,21 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="713" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575052110804" />
-    <state x="536" y="66" key="CommitChangelistDialog2" timestamp="1579634812475">
+    <state x="536" y="66" key="CommitChangelistDialog2" timestamp="1579636017909">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="402" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1579634221704" />
-    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579634812475" />
+    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579636017909" />
     <state x="461" y="200" key="SettingsEditor" timestamp="1579634858622">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="346" y="170" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1579459745056" />
     <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579634858621" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579629255619">
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579642818021">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="420" y="242" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1579459247618" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579629255619" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579642818021" />
     <state x="625" y="261" key="run.anything.popup" timestamp="1575143431869">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
