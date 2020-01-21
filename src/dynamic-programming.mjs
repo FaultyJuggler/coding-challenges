@@ -14,6 +14,8 @@ export function equalSubsetSum(arr)
     return false;
   }
 
+  const memo = [];
+
   function subsetRecursive(sum, arr, currentIndex)
   {
     if (sum === 0)
@@ -22,6 +24,13 @@ export function equalSubsetSum(arr)
     } else if (currentIndex >= arr.length)
     {
       return false;
+    }
+
+    // have we seen this before?
+    memo[currentIndex] = memo[currentIndex] || [];
+    if (typeof memo[currentIndex][sum] !== 'undefined')
+    {
+      return memo[currentIndex][sum];
     }
 
     // check if we can use current value
@@ -33,7 +42,8 @@ export function equalSubsetSum(arr)
       }
     }
     // check without current value
-    return subsetRecursive(sum, arr, currentIndex + 1);
+    memo[currentIndex][sum] = subsetRecursive(sum, arr, currentIndex + 1);
+    return memo[currentIndex][sum];
   }
 
   // because each partition must equal half the total sum, we only need to find possibility of half the sum

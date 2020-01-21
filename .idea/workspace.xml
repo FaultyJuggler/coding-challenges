@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="brute force working better, using half and even/odd logic">
+    <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dynamic-programming.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamic-programming.mjs" afterDir="false" />
     </list>
@@ -122,7 +122,7 @@
       <workItem from="1579538685274" duration="1126000" />
       <workItem from="1579540118365" duration="106000" />
       <workItem from="1579551710845" duration="1212000" />
-      <workItem from="1579628223123" duration="5153000" />
+      <workItem from="1579628223123" duration="5403000" />
     </task>
     <task id="LOCAL-00001" summary="first init and push">
       <created>1579363396136</created>
@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579633284113</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="brute force working better, using half and even/odd logic">
+      <created>1579633798076</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579633798076</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,11 +191,11 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="713" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575052110804" />
-    <state x="536" y="66" key="CommitChangelistDialog2" timestamp="1579633766279">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="402" y="23" key="CommitChangelistDialog2" timestamp="1579634179807">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="402" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1579459244321" />
-    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579633766279" />
+    <state x="402" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1579634179806" />
+    <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579633797731" />
     <state x="461" y="200" key="SettingsEditor" timestamp="1579538880813">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
