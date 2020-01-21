@@ -28,21 +28,21 @@ export function equalSubsetSum(arr)
 
     // have we seen this before?
     memo[currentIndex] = memo[currentIndex] || [];
-    if (typeof memo[currentIndex][sum] !== 'undefined')
+    if(typeof memo[currentIndex][sum] === 'undefined')
     {
-      return memo[currentIndex][sum];
+      // check if we can use current value
+      if(arr[currentIndex] <= sum)
+      {
+        if(subsetRecursive(sum - arr[currentIndex], arr, currentIndex + 1))
+        {
+          memo[currentIndex][sum] = true;
+          return true;
+        }
+      }
+      // check without current value
+      memo[currentIndex][sum] = subsetRecursive(sum, arr, currentIndex + 1);
     }
 
-    // check if we can use current value
-    if (arr[currentIndex] <= sum)
-    {
-      if (subsetRecursive(sum - arr[currentIndex], arr, currentIndex + 1))
-      {
-        return true;
-      }
-    }
-    // check without current value
-    memo[currentIndex][sum] = subsetRecursive(sum, arr, currentIndex + 1);
     return memo[currentIndex][sum];
   }
 

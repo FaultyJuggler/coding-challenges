@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dynamic-programming.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamic-programming.mjs" afterDir="false" />
     </list>
@@ -42,7 +43,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.26405624" />
   </component>
   <component name="RecentsManager">
@@ -122,7 +123,7 @@
       <workItem from="1579538685274" duration="1126000" />
       <workItem from="1579540118365" duration="106000" />
       <workItem from="1579551710845" duration="1212000" />
-      <workItem from="1579628223123" duration="5403000" />
+      <workItem from="1579628223123" duration="6110000" />
     </task>
     <task id="LOCAL-00001" summary="first init and push">
       <created>1579363396136</created>
@@ -166,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579633798076</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="working with memoization">
+      <created>1579634222048</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579634222048</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +186,8 @@
     <MESSAGE value="starting on dynamic programming" />
     <MESSAGE value="subset sum working brute force" />
     <MESSAGE value="brute force working better, using half and even/odd logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="brute force working better, using half and even/odd logic" />
+    <MESSAGE value="working with memoization" />
+    <option name="LAST_COMMIT_MESSAGE" value="working with memoization" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -191,16 +200,16 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="713" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575052110804" />
-    <state x="402" y="23" key="CommitChangelistDialog2" timestamp="1579634179807">
+    <state x="402" y="23" key="CommitChangelistDialog2" timestamp="1579634221704">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="402" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1579634179806" />
+    <state x="402" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1579634221704" />
     <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579633797731" />
-    <state x="461" y="200" key="SettingsEditor" timestamp="1579538880813">
+    <state x="461" y="200" key="SettingsEditor" timestamp="1579634511329">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="346" y="170" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1579459745056" />
-    <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579538880813" />
+    <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579634511329" />
     <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579629255619">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
