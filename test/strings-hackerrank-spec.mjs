@@ -39,3 +39,23 @@ test("return # of special substrings", (assert) => {
 
   assert.end();
 });
+
+test("return max length of common child", (assert) => {
+  let input = [
+      ["ABCD","ABDC"]
+      ,["AA","BB"]
+      ,["SHINCHAN","NOHARAAA"]
+      ,["ABCDEF","FBDAMN"]
+      ]
+  let expected = [3,0,3,2]
+
+  input.forEach(function( item, i){
+    const s1 = item[0]
+    const s2 = item[1]
+    const actual = window.commonChild(s1, s2)
+    assert.equal(actual, expected[i],
+        item + ' => ' + expected[i]);
+  });
+
+  assert.end();
+});

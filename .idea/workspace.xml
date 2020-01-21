@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/strings-hackerrank.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/strings-hackerrank-spec.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic-programming.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/dynamic-programming-spec.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strings-hackerrank.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/strings-hackerrank.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/strings-hackerrank-spec.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/test/strings-hackerrank-spec.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +123,9 @@
       <workItem from="1579458068903" duration="9394000" />
       <workItem from="1579536092915" duration="1247000" />
       <workItem from="1579538685274" duration="1126000" />
+      <workItem from="1579540118365" duration="106000" />
+      <workItem from="1579551710845" duration="1212000" />
+      <workItem from="1579628223123" duration="804000" />
     </task>
     <task id="LOCAL-00001" summary="first init and push">
       <created>1579363396136</created>
@@ -174,11 +179,11 @@
     </state>
     <state x="346" y="170" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1579459745056" />
     <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579538880813" />
-    <state x="420" y="242" key="Vcs.Push.Dialog.v2" timestamp="1579459247618">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579540207113">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="420" y="242" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1579459247618" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579373706320" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579540207113" />
     <state x="625" y="261" key="run.anything.popup" timestamp="1575143431869">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
