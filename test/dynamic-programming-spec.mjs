@@ -1,17 +1,19 @@
 import test from 'tape'
 import * as dp from '../src/dynamic-programming.mjs'
 
-test("return maximum profits given weights, profits, and capacity", (assert) => {
-  let profits = [1, 6, 10, 16];
-  let weights = [1, 2, 3, 5];
-  let capacities = [7, 6];
-  let expected = [22, 17];
+test( 'return maximum profits given weights, profits, and capacity, 0/1',
+    ( assert ) =>
+    {
+      let profits = [1, 6, 10, 16];
+      let weights = [1, 2, 3, 5];
+      let capacities = [7, 6];
+      let expected = [22, 17];
 
-  capacities.forEach(function(item, i)
-  {
-    const actual = dp.solveKnapsackMemo(item, profits, weights);
-    assert.equal(actual, expected[i],
-        item + ' => ' + expected[i]);
+      capacities.forEach( function( item, i )
+      {
+        const actual = dp.solveKnapsackMemo( item, profits, weights );
+        assert.equal( actual, expected[i],
+            item + ' => ' + expected[i] );
   });
 
   capacities.forEach(function(item, i)
@@ -60,7 +62,51 @@ test('check if two subsets can be created that have equal sums', (assert) =>
     actual = dp.equalSubsetSumBott( item );
     assert.equal( actual, expected[i],
         item + ' => ' + expected[i] );
-  });
+  } );
 
   assert.end();
-});
+} );
+
+test( 'return maximum profits given weights, profits, and capacity, unbounded',
+    ( assert ) =>
+    {
+      let profits = [15, 20, 50];
+      let weights = [1, 2, 3];
+      let capacities = [5];
+      let expected = [80];
+
+      capacities.forEach( function( item, i )
+      {
+        const actual = dp.solveKnapsackUnboundedMemo( item, profits, weights );
+        assert.equal( actual, expected[i],
+            item + ' => ' + expected[i] );
+      } );
+
+      capacities.forEach( function( item, i )
+      {
+        const actual = dp.solveKnapsackUnboundedBott( item, profits, weights );
+        assert.equal( actual, expected[i],
+            item + ' => ' + expected[i] );
+      } );
+
+      profits = [15, 50, 60, 90];
+      weights = [1, 3, 4, 5];
+      capacities = [8, 6];
+      expected = [140, 105];
+
+      capacities.forEach( function( item, i )
+      {
+        const actual = dp.solveKnapsackUnboundedMemo( item, profits, weights );
+        assert.equal( actual, expected[i],
+            item + ' => ' + expected[i] );
+      } );
+
+      capacities.forEach( function( item, i )
+      {
+        const actual = dp.solveKnapsackUnboundedBott( item, profits, weights );
+        assert.equal( actual, expected[i],
+            item + ' => ' + expected[i] );
+      } );
+
+      assert.end();
+    } );

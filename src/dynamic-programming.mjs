@@ -1,4 +1,92 @@
 /*
+Given the weights and profits of ‘N’ items, we are asked to put these items in a knapsack which has a capacity ‘C’. The goal is to get the maximum profit from the items in the knapsack.
+ */
+export function solveKnapsackUnboundedBott( capacity, profits, weights )
+{
+  // base checks
+  if( capacity <= 0 ||
+      profits.length < 1 ||
+      weights.length !== profits.length
+  )
+  {
+    return 0;
+  }
+
+  const itemCount = profits.length;
+  const dpMap = Array( itemCount ).
+      fill( 0 ).
+      map( () => Array( capacity + 1 ).fill( 0 ) );
+
+  // populate the capacity=0 columns; with '0' capacity we have '0' profit
+  for( let i = 0; i < itemCount; i++ )
+  {
+    dpMap[i][0] = 0;
+  }
+
+  for( let i = 0; i < itemCount; i++ )
+  {
+    for( let c = 1; c <= capacity; c++ )
+    {
+      let profitWith = 0;
+      let profitWithOut = 0;
+      if( weights[i] <= c )
+      {
+        profitWith = profits[i] + dpMap[i][c - weights[i]];
+      }
+      if( i > 0 )
+      {
+        profitWithOut = dpMap[i - 1][c];
+      }
+      dpMap[i][c] = Math.max( profitWith, profitWithOut );
+    }
+  }
+
+  return dpMap[itemCount - 1][capacity];
+}
+
+export function solveKnapsackUnboundedMemo( capacity, profits, weights )
+{
+  const memo = [];
+
+  function knapsackRecursive( capacity, currentProfit )
+  {
+    // base checks
+    if(
+        capacity < 0 ||
+        profits.length < 1 ||
+        weights.length !== profits.length
+    )
+    {
+      return 0;
+    }
+
+    if( capacity === 0 )
+    {
+      return currentProfit;
+    }
+
+    let max = 0;
+    weights.forEach( function( weight, index )
+    {
+      // have we seen this before?
+      memo[index] = memo[index] || [];
+      if( typeof memo[index][currentProfit] !== 'undefined' )
+      {
+        max = Math.max( max, memo[index][currentProfit] );
+      } else if( weight <= capacity )
+      {
+        max = Math.max( max, knapsackRecursive( capacity - weight,
+            currentProfit + profits[index] ) );
+      }
+    } );
+
+    return max;
+  }
+
+  return knapsackRecursive( capacity, 0 );
+}
+
+/*
 Given a set of positive numbers, find if we can partition it into two subsets such that the sum of elements in both the subsets is equal.
  */
 export function equalSubsetSumMemo( arr )
