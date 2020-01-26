@@ -1,3 +1,73 @@
+export function palindromeSubBott( s )
+{
+  if( s.length < 2 )
+  {
+    return s.length;
+  }
+
+  const dpMap = new Array( s.length ).fill( 0 ).
+      map( () => Array( s.length ).fill( 0 ) );
+  for( let i = 0; i < s.length; i++ )
+  {
+    dpMap[i][i] = 1;
+  }
+
+  for( let end = 1; end < s.length; end++ )
+  {
+    for( let start = end - 1; start >= 0; start-- )
+    {
+      console.log( dpMap );
+      if( s[start] === s[end] )
+      {
+        dpMap[start][end] = 2 + dpMap[start + 1][end - 1];
+      } else
+      {
+        const front = dpMap[start + 1][end];
+        const back = dpMap[start][end - 1];
+        dpMap[start][end] = Math.max( front, back );
+      }
+    }
+  }
+
+  return dpMap[0][s.length - 1];
+}
+
+export function palindromeSubMemo( s )
+{
+  if( s.length < 2 )
+  {
+    return s.length;
+  }
+
+  const memo = [];
+
+  function findLPSLengthRecursive( st, startIndex, endIndex )
+  {
+    if( startIndex > endIndex ) return 0;
+    // every sequence with one element is a palindrome of length 1
+    if( startIndex === endIndex ) return 1;
+
+    memo[startIndex] = memo[startIndex] || [];
+
+    if( typeof memo[startIndex][endIndex] === 'undefined' )
+    {
+      if( st[startIndex] === st[endIndex] )
+      {
+        memo[startIndex][endIndex] = 2 +
+            findLPSLengthRecursive( st, startIndex + 1, endIndex - 1 );
+      } else
+      {
+        const front = findLPSLengthRecursive( st, startIndex, endIndex - 1 );
+        const back = findLPSLengthRecursive( st, startIndex + 1, endIndex );
+        memo[startIndex][endIndex] = Math.max( front, back );
+      }
+    }
+    return memo[startIndex][endIndex];
+  }
+
+  return findLPSLengthRecursive( s, 0, s.length - 1 );
+}
+
 /*
 Given the weights and profits of ‘N’ items, we are asked to put these items in a knapsack which has a capacity ‘C’. The goal is to get the maximum profit from the items in the knapsack.
  */

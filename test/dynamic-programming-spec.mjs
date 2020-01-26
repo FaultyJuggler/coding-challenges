@@ -68,42 +68,66 @@ test('check if two subsets can be created that have equal sums', (assert) =>
 } );
 
 test( 'return maximum profits given weights, profits, and capacity, unbounded',
+( assert ) =>
+{
+  let profits = [15, 20, 50];
+  let weights = [1, 2, 3];
+  let capacities = [5];
+  let expected = [80];
+
+  capacities.forEach( function( item, i )
+  {
+    const actual = dp.solveKnapsackUnboundedMemo( item, profits, weights );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
+  } );
+
+  capacities.forEach( function( item, i )
+  {
+    const actual = dp.solveKnapsackUnboundedBott( item, profits, weights );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
+  } );
+
+  profits = [15, 50, 60, 90];
+  weights = [1, 3, 4, 5];
+  capacities = [8, 6];
+  expected = [140, 105];
+
+  capacities.forEach( function( item, i )
+  {
+    const actual = dp.solveKnapsackUnboundedMemo( item, profits, weights );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
+  } );
+
+  capacities.forEach( function( item, i )
+  {
+    const actual = dp.solveKnapsackUnboundedBott( item, profits, weights );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
+  } );
+
+  assert.end();
+} );
+
+test( 'longest palindrome subsequence',
     ( assert ) =>
     {
-      let profits = [15, 20, 50];
-      let weights = [1, 2, 3];
-      let capacities = [5];
-      let expected = [80];
+      let input = [
+        'abdbca'
+        , 'cddpd'
+        , 'pqr'
+        , 'lpaspal'];
+      let expected = [5, 3, 1, 5];
 
-      capacities.forEach( function( item, i )
+      input.forEach( function( item, i )
       {
-        const actual = dp.solveKnapsackUnboundedMemo( item, profits, weights );
+        let actual = dp.palindromeSubMemo( item );
         assert.equal( actual, expected[i],
             item + ' => ' + expected[i] );
-      } );
 
-      capacities.forEach( function( item, i )
-      {
-        const actual = dp.solveKnapsackUnboundedBott( item, profits, weights );
-        assert.equal( actual, expected[i],
-            item + ' => ' + expected[i] );
-      } );
-
-      profits = [15, 50, 60, 90];
-      weights = [1, 3, 4, 5];
-      capacities = [8, 6];
-      expected = [140, 105];
-
-      capacities.forEach( function( item, i )
-      {
-        const actual = dp.solveKnapsackUnboundedMemo( item, profits, weights );
-        assert.equal( actual, expected[i],
-            item + ' => ' + expected[i] );
-      } );
-
-      capacities.forEach( function( item, i )
-      {
-        const actual = dp.solveKnapsackUnboundedBott( item, profits, weights );
+        actual = dp.palindromeSubBott( item );
         assert.equal( actual, expected[i],
             item + ' => ' + expected[i] );
       } );
