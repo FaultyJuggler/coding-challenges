@@ -1,4 +1,70 @@
-export function palindromeSubBott( s )
+export function palindromeSubstringBott( s )
+{
+  if( s.length < 2 )
+  {
+    return s.length;
+  }
+
+  const dpMap = new Array( s.length ).fill( false ).
+      map( () => Array( s.length ).fill( false ) );
+
+  for( let i = 0; i < s.length; i++ )
+  {
+    dpMap[i][i] = true;
+  }
+
+  let max = 1;
+  for( let end = 1; end < s.length; end++ )
+  {
+    for( let start = end - 1; start >= 0; start-- )
+    {
+      if( s[start] === s[end] )
+      {
+        if( ( end - start === 1 ) || dpMap[start + 1][end - 1] )
+          max = Math.max( max, end - start + 1 );
+      }
+    }
+  }
+
+  return max;
+}
+
+export function palindromeSubstringMemo( s )
+{
+  if( s.length < 2 )
+  {
+    return s.length;
+  }
+
+  function findLPSLengthRecursive( st, startIndex, endIndex )
+  {
+    if( startIndex > endIndex )
+    {
+      return 0;
+    } else if( startIndex === endIndex )
+    {
+      return 1;
+    }
+
+    if( st[startIndex] === st[endIndex] )
+    {
+      const remaining = endIndex - startIndex - 1;
+      if( remaining ===
+          findLPSLengthRecursive( st, startIndex + 1, endIndex - 1 ) )
+      {
+        return remaining + 2;
+      }
+    }
+    const front = findLPSLengthRecursive( st, startIndex, endIndex - 1 );
+    const back = findLPSLengthRecursive( st, startIndex + 1, endIndex );
+
+    return Math.max( front, back );
+  }
+
+  return findLPSLengthRecursive( s, 0, s.length - 1 );
+}
+
+export function palindromeSubsequenceBott( s )
 {
   if( s.length < 2 )
   {
@@ -16,7 +82,6 @@ export function palindromeSubBott( s )
   {
     for( let start = end - 1; start >= 0; start-- )
     {
-      console.log( dpMap );
       if( s[start] === s[end] )
       {
         dpMap[start][end] = 2 + dpMap[start + 1][end - 1];
@@ -32,7 +97,7 @@ export function palindromeSubBott( s )
   return dpMap[0][s.length - 1];
 }
 
-export function palindromeSubMemo( s )
+export function palindromeSubsequenceMemo( s )
 {
   if( s.length < 2 )
   {

@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d387f44a-5ce4-4844-bba7-097e81011a96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cake-arrays.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/cake-arrays-spec.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dynamic-programming.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamic-programming.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/dynamic-programming-spec.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/test/dynamic-programming-spec.mjs" afterDir="false" />
@@ -128,7 +126,8 @@
       <workItem from="1579628223123" duration="9062000" />
       <workItem from="1579792639879" duration="5267000" />
       <workItem from="1579808670288" duration="595000" />
-      <workItem from="1579991313236" duration="7272000" />
+      <workItem from="1579991313236" duration="7541000" />
+      <workItem from="1580003465119" duration="3062000" />
     </task>
     <task id="LOCAL-00001" summary="first init and push">
       <created>1579363396136</created>
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579805588724</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="started array problems from interviewcake.com&#10;finished dynamic programming for longest palindromic subsequence">
+      <created>1580002905182</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1580002905183</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +230,8 @@
     <MESSAGE value="working with bottom up dp" />
     <MESSAGE value="minor text arrangement" />
     <MESSAGE value="first unbounded knapsack logic with memoization and bottom up dynamic programming" />
-    <option name="LAST_COMMIT_MESSAGE" value="first unbounded knapsack logic with memoization and bottom up dynamic programming" />
+    <MESSAGE value="started array problems from interviewcake.com&#10;finished dynamic programming for longest palindromic subsequence" />
+    <option name="LAST_COMMIT_MESSAGE" value="started array problems from interviewcake.com&#10;finished dynamic programming for longest palindromic subsequence" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -237,20 +244,20 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="713" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1575052110804" />
-    <state x="536" y="66" key="CommitChangelistDialog2" timestamp="1579805588328">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="402" y="23" key="CommitChangelistDialog2" timestamp="1580002902977">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="402" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1579634221704" />
+    <state x="402" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1580002902977" />
     <state x="536" y="66" key="CommitChangelistDialog2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579805588328" />
     <state x="461" y="200" key="SettingsEditor" timestamp="1579634858622">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="346" y="170" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1579459745056" />
     <state x="461" y="200" key="SettingsEditor/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579634858621" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1579805592168">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="420" y="242" key="Vcs.Push.Dialog.v2" timestamp="1580002928534">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="420" y="242" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1579459247618" />
+    <state x="420" y="242" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1580002928534" />
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1579805592168" />
     <state x="625" y="261" key="run.anything.popup" timestamp="1575143431869">
       <screen x="0" y="23" width="1920" height="1057" />

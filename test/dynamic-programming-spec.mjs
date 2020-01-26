@@ -123,11 +123,35 @@ test( 'longest palindrome subsequence',
 
       input.forEach( function( item, i )
       {
-        let actual = dp.palindromeSubMemo( item );
+        let actual = dp.palindromeSubsequenceMemo( item );
         assert.equal( actual, expected[i],
             item + ' => ' + expected[i] );
 
-        actual = dp.palindromeSubBott( item );
+        actual = dp.palindromeSubsequenceBott( item );
+        assert.equal( actual, expected[i],
+            item + ' => ' + expected[i] );
+      } );
+
+      assert.end();
+    } );
+
+test( 'longest palindrome substring',
+    ( assert ) =>
+    {
+      let input = [
+        'abdbca'
+        , 'cddpd'
+        , 'pqr'
+        , 'lpaspal'];
+      let expected = [3, 3, 1, 1];
+
+      input.forEach( function( item, i )
+      {
+        let actual = dp.palindromeSubstringMemo( item );
+        assert.equal( actual, expected[i],
+            item + ' => ' + expected[i] );
+
+        actual = dp.palindromeSubstringBott( item );
         assert.equal( actual, expected[i],
             item + ' => ' + expected[i] );
       } );
