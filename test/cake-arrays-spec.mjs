@@ -26,3 +26,26 @@ test( 'return consolidated time ranges', ( assert ) =>
 
   assert.end();
 } );
+
+test( 'return how many ways total can be reached', ( assert ) =>
+{
+  const input = [
+    [1, 2, 3]
+    , [1, 2, 3],
+  ];
+  const totals = [4, 5];
+  const expected = [4, 5];
+
+  input.forEach( function( item, i )
+  {
+    let actual = cake.countPathsFromDenominations( item, totals[i] );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
+
+    actual = cake.countPathsFromDenominationsBott( item, totals[i] );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
+  } );
+
+  assert.end();
+} );

@@ -142,8 +142,10 @@ test( 'longest palindrome substring',
         'abdbca'
         , 'cddpd'
         , 'pqr'
-        , 'lpaspal'];
-      let expected = [3, 3, 1, 1];
+        , 'lpaspal'
+        , 'ababa'
+        , 'baabb'];
+      let expected = [3, 3, 1, 1, 5, 4];
 
       input.forEach( function( item, i )
       {
@@ -151,9 +153,34 @@ test( 'longest palindrome substring',
         assert.equal( actual, expected[i],
             item + ' => ' + expected[i] );
 
-        actual = dp.palindromeSubstringBott( item );
+        // actual = dp.palindromeSubstringBott( item );
+        // assert.equal( actual, expected[i],
+        //     item + ' => ' + expected[i] );
+      } );
+
+      assert.end();
+    } );
+
+test( 'min palindromes to remove',
+    ( assert ) =>
+    {
+      let input = [
+        'ababa'
+        , 'abb'
+        , 'baabb'
+        , ''
+        , 'ababb'];
+      let expected = [1, 2, 2, 0, 2];
+
+      input.forEach( function( item, i )
+      {
+        let actual = dp.removePalindromeSub( item );
         assert.equal( actual, expected[i],
             item + ' => ' + expected[i] );
+
+        // actual = dp.palindromeSubstringBott( item );
+        // assert.equal( actual, expected[i],
+        //     item + ' => ' + expected[i] );
       } );
 
       assert.end();

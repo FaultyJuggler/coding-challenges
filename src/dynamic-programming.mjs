@@ -1,3 +1,93 @@
+export function removePalindromeSub( s )
+{
+  if( s.length < 2 )
+  {
+    return s.length;
+  }
+
+  let palinsRemoved = 0;
+
+  function findLongestPalindromeRecursive( st, start, end )
+  {
+    if( start > end )
+    {
+      return [0, start, end];
+    } else if( start === end )
+    {
+      return [1, start, end];
+    }
+    // console.log(start + " " + end)
+    if( st[start] === st[end] )
+    {
+      const remaining = end - start - 1;
+      const lowerCheck = findLongestPalindromeRecursive( st, start + 1,
+          end - 1 );
+      // console.log( lowerCheck)
+      if( remaining === lowerCheck[0] )
+      {
+        // console.log("palin")
+        return [remaining + 2, start, end];
+      }
+    }
+
+    const front = findLongestPalindromeRecursive( st, start, end - 1 );
+    const back = findLongestPalindromeRecursive( st, start + 1, end );
+
+    if( front[0] > back[0] )
+    {
+      // console.log("front" + s.substring( front[1], front[2]))
+      return front;
+    } else if( front[0] === back[0] )
+    {
+      const leftSt = st.substring( 0, front[1] ) +
+          st.substring( front[2], st.length - 1 );
+      const left = findLongestPalindromeRecursive( leftSt, 0,
+          leftSt.length - 1 );
+      const rightSt = st.substring( 0, back[1] ) +
+          st.substring( back[2], st.length - 1 );
+      const right = findLongestPalindromeRecursive( rightSt, 0,
+          rightSt.length - 1 );
+      if( right[0] > left[0] )
+      {
+        return front;
+      } else
+      {
+        return back;
+      }
+    } else
+    {
+      // console.log("back" + s.substring( back[1], back[2]))
+      return back;
+    }
+  }
+
+  let subToRemove = findLongestPalindromeRecursive( s, 0, s.length - 1 );
+
+  if( subToRemove[1] === 0 && subToRemove[2] === s.length - 1 )
+  {
+    return 1;
+  }
+
+  while( s.length > 1 )
+  {
+    palinsRemoved++;
+    s = s.substring( 0, subToRemove[1] ) +
+        s.substring( subToRemove[2], s.length - 1 );
+    subToRemove = findLongestPalindromeRecursive( s, 0, s.length - 1 );
+    console.log( subToRemove );
+    console.log( s );
+    // console.log( "front " + s.substring(0, subToRemove[1]) )
+    // console.log( "back " + s.substring(subToRemove[2], s.length-1) )
+  }
+
+  if( s.length === 1 )
+  {
+    palinsRemoved++;
+  }
+
+  return palinsRemoved;
+};
+
 export function palindromeSubstringBott( s )
 {
   if( s.length < 2 )
