@@ -1,15 +1,17 @@
-import test from 'tape'
-import * as window from '../src/strings-hackerrank.mjs'
+const test = require( 'tape' ).test;
+const window = require( '../src/strings-hackerrank.js' );
 
-test("return deletes needed to remove repeated characters", (assert) => {
-  let expected = [3,4,0,0,4]
-  let input = ["AAAA","BBBBB","ABABABAB","BABABA","AAABBB"]
+test( 'return deletes needed to remove repeated characters', ( assert ) =>
+{
+  let expected = [3, 4, 0, 0, 4];
+  let input = ['AAAA', 'BBBBB', 'ABABABAB', 'BABABA', 'AAABBB'];
 
-  input.forEach(function( item, i){
-    const actual = window.alternatingCharacters( item )
-    assert.equal(actual, expected[i],
-        item + ' => ' + expected[i]);
-  });
+  input.forEach( function( item, i )
+  {
+    const actual = window.alternatingCharacters( item );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
+  } );
 
   assert.end();
 });

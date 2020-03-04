@@ -49,3 +49,52 @@ test( 'return how many ways total can be reached', ( assert ) =>
 
   assert.end();
 } );
+
+test( 'reverse words in place', ( assert ) =>
+{
+  const input = [
+    '123 321'
+    , 'abc cab'
+    , 'test sentence',
+  ];
+  const expected = [
+    '321 123'
+    , 'cba bac'
+    , 'tset ecnetnes'];
+
+  const expectedWords = [
+    '321 123'
+    , 'cab abc'
+    , 'sentence test'];
+
+  input.forEach( function( item, i )
+  {
+    let actual = cake.reverseWordLettersInPlace( item );
+    assert.equal( actual, expected[i],
+        item + ' => ' + expected[i] );
+  } );
+
+  input.forEach( function( item, i )
+  {
+    let actual = cake.reverseWordsInPlace( item );
+    assert.equal( actual, expectedWords[i],
+        item + ' => ' + expectedWords[i] );
+  } );
+
+  assert.end();
+} );
+
+test( 'return merged array from two sorted arrays', ( assert ) =>
+{
+  const input = [
+    [3, 4, 6, 10, 11, 15]
+    , [1, 5, 8, 12, 14, 19],
+  ];
+  const expected = [1, 3, 4, 5, 6, 8, 10, 11, 12, 14, 15, 19];
+
+  const actual = cake.mergeSortedArrays( input[0], input[1] );
+  assert.deepEquals( actual, expected,
+      input + ' => ' + expected );
+
+  assert.end();
+} );

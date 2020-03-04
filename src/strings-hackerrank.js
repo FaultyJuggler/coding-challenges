@@ -4,18 +4,27 @@ A string is said to be a child of a another string if it can be formed by deleti
 For example, ABCD and ABDC have two children with maximum length 3, ABC and ABD. They can be formed by eliminating either the D or C from both strings. Note that we will not consider ABCD as a common child because we can't rearrange characters and ABCD  ABDC.
 */
 
-export function commonChild(s1, s2)
+function commonChild( s1, s2 )
 { // dynamic programming to figure out longest path from one string to other
-  let max = 0
-  let substr = ""
-  for( let i = 0; i < s2.length; i++ ){
-    const nextChar = s2[i]
-    const temp = substr + nextChar
-    if( s1.includes( temp ) ){
-      substr += nextChar
-      max = Math.max( max, substr.length )
-    }
+  let max = 0;
+  const map1 = {};
+  const map2 = {};
+  for( let i = 0; i < s1.length; i++ )
+  {
+    let nextChar = s1[i];
+    map1[nextChar] = map1[nextChar] + 1 || 1;
+    nextChar = s2[i];
+    map2[nextChar] = map2[nextChar] + 1 || 1;
   }
+
+  Object.keys( map1 ).forEach( letter =>
+  {
+    if( letter in map2 )
+    {
+      max += Math.min( map1[letter], map2[letter] );
+    }
+  } );
+
   return max;
 }
 
@@ -29,17 +38,19 @@ Function Description
 
 The countSpecialSubstr function in the editor below. It should return an integer representing the number of special substrings that can be formed from the given string.*/
 
-export function countSpecialSubstr(s)
+function countSpecialSubstr( s )
 {
-  let count = 0
+  let count = 0;
 
-  for( let i = 0; i < s.length; i++ ){
-    const currentChar = s[i]
+  for( let i = 0; i < s.length; i++ )
+  {
+    const currentChar = s[i];
     // each character is a substring
-    count++
+    count++;
     // for repeating characters, count each additional as a longer substring
-    let forwardCursor = 1
-    while( s[i+forwardCursor] === currentChar ){
+    let forwardCursor = 1;
+    while( s[i + forwardCursor] === currentChar )
+    {
       count++
       forwardCursor++
     }
@@ -68,15 +79,18 @@ You are given a string containing characters  and  only. Your task is to change 
     For example, given the string , remove an  at positions  and  to make  in  deletions.
 */
 
-export const alternatingCharacters = function(s) {
-  let deletes = 0
-  let prevChar = ""
-  for( let i = 0; i < s.length; i++ ){
-    const currentChar = s[i]
-    if( prevChar === currentChar ){
-      deletes++
+function alternatingCharacters( s )
+{
+  let deletes = 0;
+  let prevChar = '';
+  for( let i = 0; i < s.length; i++ )
+  {
+    const currentChar = s[i];
+    if( prevChar === currentChar )
+    {
+      deletes++;
     }
-    prevChar = currentChar
+    prevChar = currentChar;
   }
 
   return deletes
@@ -86,17 +100,20 @@ export const alternatingCharacters = function(s) {
 // need to ensure that for each character seen, the quantity of each type is no more than 2 different numbers, and only one of those can have a count of 1
 // for each character we see, we use indexof to count that character
 // we track previously seen characters
-export const validSherlockString = function(s) {
-  const charSet = new Set()
-  const countMap = {}
-  const allowedMultiples = 2
+function validSherlockString( s )
+{
+  const charSet = new Set();
+  const countMap = {};
+  const allowedMultiples = 2;
 
-  for( let i = 0; i < s.length; i++ ) {
-    const nextChar = s[i]
-    if( charSet.has(nextChar) === false ){
-      charSet.add( nextChar ) // save that we've seen it
+  for( let i = 0; i < s.length; i++ )
+  {
+    const nextChar = s[i];
+    if( charSet.has( nextChar ) === false )
+    {
+      charSet.add( nextChar ); // save that we've seen it
       // count how many times this character is in the string
-      let count = 1
+      let count = 1;
       let cursor = s.indexOf(nextChar,i+1)
       while( cursor > -1 )
       {
@@ -125,11 +142,18 @@ export const validSherlockString = function(s) {
               return "NO"
             }
           }
-          countMap[count] = 1
+          countMap[count] = 1;
         }
       }
     }
   }
 
-  return "YES"
+  return 'YES';
 }
+
+module.exports = {
+  commonChild,
+  countSpecialSubstr,
+  alternatingCharacters,
+  validSherlockString,
+};
